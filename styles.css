@@ -8,46 +8,6 @@ body {
   display: flex;
 }
 
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 90vh;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  justify-content: space-around;
-}
-
-.name-container {
-  max-width: 500px;
-}
-
-.name {
-  font-size: 56px;
-}
-
-p {
-  font-size: 21px;
-}
-
-svg {
-  margin-right: 5px;
-}
-
-.more-about, .more-about:hover {
-  text-decoration: none;
-  color: #ffffff;
-}
-
 .footer {
   display: flex;
   justify-content: center;
@@ -55,46 +15,4 @@ svg {
   font-size: 20px;
   color: #ffffff;
   background-color: #212529;
-}
-
-a {
-  color: #231F20;
-}
-
-.instagram:hover {
-  color: #962fbf;
-}
-
-.dicord:hover {
-  color: #5865F2;
-}
-
-.github:hover {
-  color: #212529;
-}
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column-reverse;
-  }
-  .rounded {
-    width: 65%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  .main {
-    margin: 10px;
-  }
-  .footer {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 400px) {
-  .name {
-    font-size: 35px;
-  }
-  p {
-    font-size: 16px;
-  }
 }
