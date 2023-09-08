@@ -1,0 +1,49 @@
+body {
+  background-color: #E7DFD8;
+  color: #231F20;
+}
+
+.navbar {
+  display: flex;
+}
+
+.links {
+  justify-self: flex-end;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.name-container {
+  max-width: 500px;
+}
+
+.name {
+  font-size: 56px;
+}
+
+p {
+  font-size: 21px;
+}
+
+svg {
+  margin-right: 5px;
+}
+
+
