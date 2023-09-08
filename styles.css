@@ -46,4 +46,15 @@ svg {
   margin-right: 5px;
 }
 
-
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .rounded {
+    width: 75%;
+    height: auto;
+  }
+  .main {
+    margin: 10px;
+  }
+}
