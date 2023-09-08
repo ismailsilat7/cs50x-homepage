@@ -1,14 +1,11 @@
 body {
   background-color: #E7DFD8;
   color: #231F20;
+  height: 100vh;
 }
 
 .navbar {
   display: flex;
-}
-
-.links {
-  justify-self: flex-end;
 }
 
 .main {
@@ -46,15 +43,53 @@ svg {
   margin-right: 5px;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #212529;
+}
+
+a {
+  color: #231F20;
+}
+
+.instagram:hover {
+  color: #962fbf;
+}
+
+.dicord:hover {
+  color: #5865F2;
+}
+
+.github:hover {
+  color: #212529;
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column-reverse;
   }
   .rounded {
-    width: 75%;
+    width: 65%;
     height: auto;
+    margin-bottom: 10px;
   }
   .main {
     margin: 10px;
+  }
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .name {
+    font-size: 35px;
+  }
+  p {
+    font-size: 16px;
   }
 }
