@@ -1,5 +1,5 @@
 body {
-  background-color: #E7DFD8;
+  background-color: #EFEEE7;
   color: #231F20;
   height: 100vh;
 }
@@ -15,4 +15,12 @@ body {
   font-size: 20px;
   color: #ffffff;
   background-color: #212529;
+}
+
+.rotate {
+  transition: transform 0.5s;
+}
+
+.rotate:hover {
+  transform: rotate(360deg);
 }
