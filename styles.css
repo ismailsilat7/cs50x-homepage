@@ -1,11 +1,62 @@
 body {
   background-color: #EFEEE7;
   color: #231F20;
-  height: 100vh;
 }
 
 .navbar {
   display: flex;
+}
+
+.intro{
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 15px;
+}
+
+.intro > .name {
+  font-size: 72px;
+  font-weight: bolder;
+}
+
+.intro > .title {
+  font-size: 24px;
+}
+
+.intro > .contact {
+  margin-top: 15px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  margin: 15%;
+}
+
+.about-text {
+  width: 40%;
+}
+
+hr {
+  border: none;
+  height: 2px; 
+  background-color: #231F20; 
+  width: 80px;
+  margin: 20px 0; 
+  transition: width 1s ease-in-out;
+}
+
+.about-container:hover hr {
+  width: 100%;
+}
+
+.rounded {
+  margin-left: 20px;
 }
 
 .footer {
@@ -17,10 +68,41 @@ body {
   background-color: #212529;
 }
 
-.rotate {
-  transition: transform 0.5s;
+@media (max-width: 850px) {
+  .intro > .name {
+    font-size: 50px;
+  }
+  .intro > .title {
+    font-size: 22px;
+  }
+  .about-container {
+    margin: 0;
+    margin: 10%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-text {
+    width: 90%;
+    align-self: flex-start;
+  }
+  .about-text > .about-me {
+    font-size: 25px;
+  }
+  .about-text > .about-para {
+    font-size: 14px;
+  }
+  .rounded {
+    margin-left: 0px;
+    width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+    align-self: flex-start;
+  }
 }
 
-.rotate:hover {
-  transform: rotate(360deg);
+@media (max-width: 400px) {
+  .rounded {
+    width: 80%;
+  }
 }
