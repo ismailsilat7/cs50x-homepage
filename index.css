@@ -1,3 +1,9 @@
+body {
+  background-color: #EFEEE7;
+  color: #231F20;
+  height: 100vh;
+}
+
 .main {
   display: flex;
   justify-content: center;
@@ -39,7 +45,12 @@ svg {
 }
 
 a {
+  text-decoration: none;
   color: #231F20;
+}
+
+.facebook:hover {
+  color: #316FF6;
 }
 
 .instagram:hover {
@@ -50,11 +61,23 @@ a {
   color: #5865F2;
 }
 
-.github:hover {
+.github:hover,a:hover {
   color: #686c70;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #212529;
+}
+
 @media (max-width: 768px) {
+  .body {
+    min-height: 100vh;
+  }
   .container {
     flex-direction: column-reverse;
   }
@@ -79,3 +102,5 @@ a {
     font-size: 16px;
   }
 }
+
+
