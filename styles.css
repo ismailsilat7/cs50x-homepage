@@ -158,6 +158,106 @@ hr {
   font-weight: bolder;
 }
 
+.main-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.carousel .card {
+  list-style: none;
+  background: #212529;
+  border-radius: 8px;
+  margin: 25px 10px;
+  padding: 25px;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #EFEEE7;
+  text-align: center;
+}
+
+.card > p {
+  text-align: center;
+}
+
+.wrapper .carousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.carousel :where(.card, .img) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  background: #EFEEE7;
+}
+
+.project-buttons {
+  margin: 15px;
+  text-align: center;
+}
+
+a .btn {
+  font-size: 14px;
+  width: 120px;
+  transition: transform 0.3s ease
+}
+
+a .btn:hover {
+  transform: scale(1.05);
+}
+
+.project-buttons .btn {
+  margin: 5px 0;
+}
+
+.card .img {
+  background: #EFEEE7;
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  transition: transform 0.3s ease
+}
+
+.img:hover {
+  transform: scale(1.1);
+}
+
+.card .img img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #212529 ;
+}
+
+.card h2 {
+  font-weight: 500;
+  font-size: 25px;
+  margin: 30px 0 5px;
+}
+
+.card p {
+  color: #9ca0ae;
+  font-size: 21px;
+}
+
+.project-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
 @media (max-width: 850px) {
   .intro > .name {
     font-size: 50px;
@@ -210,6 +310,9 @@ hr {
   .footer {
     font-size: 14px;
   }
+  .carousel .card {
+    max-width: 45%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -218,5 +321,9 @@ hr {
   }
   .rounded {
     width: 80%;
+  }
+  .carousel .card {
+    max-width: 80%;
+    margin: 10px 0px;
   }
 }
