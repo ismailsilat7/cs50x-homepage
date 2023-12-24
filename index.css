@@ -39,9 +39,9 @@ svg {
   margin-right: 5px;
 }
 
-.more-about, .more-about:hover {
+.about {
   text-decoration: none;
-  color: #ffffff;
+  color: #212529;
 }
 
 a {
