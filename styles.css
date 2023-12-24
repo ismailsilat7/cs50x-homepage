@@ -34,8 +34,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
   margin: 15%;
+  min-height: 100vh;
+}
+
+.about-me > h2{
+  font-weight: bolder;
 }
 
 .about-text {
@@ -51,8 +55,41 @@ hr {
   transition: width 1s ease-in-out;
 }
 
-.about-container:hover hr {
+.about-container:hover hr, .academic-background:hover hr {
   width: 100%;
+}
+
+.academic-background {
+  display: flex;
+  margin: 0 15%;
+  justify-content: space-between;
+  align-content: space-between;
+  min-height: 70vh;
+}
+
+.institute {
+  margin-bottom: 30px;
+}
+
+.academic-head {
+  font-size: 25px;
+  font-weight: bolder;
+  margin-right: 20px;
+}
+
+.about-academics {
+  width: 60%;
+}
+
+.program {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.location {
+  color: #464749;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .rounded {
@@ -63,9 +100,10 @@ hr {
   display: flex;
   justify-content: center;
   padding: 8px;
-  font-size: 20px;
+  font-size: 18px;
   color: #ffffff;
   background-color: #212529;
+  margin-bottom: 0;
 }
 
 @media (max-width: 850px) {
@@ -94,14 +132,35 @@ hr {
   }
   .rounded {
     margin-left: 0px;
-    width: 70%;
+    width: 60%;
     height: auto;
     margin-bottom: 10px;
     align-self: flex-start;
   }
+  .academic-background {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 10%;
+  }
+  .about-academics {
+    width: 90%;
+  }
+  .about-institute {
+    font-size: 14px;
+  }
+  .academic-head {
+    font-size: 25px;
+  }
+  .program {
+    font-size: 16px;
+  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
+  .academic-head {
+    font-size: 20px;
+  }
   .rounded {
     width: 80%;
   }
