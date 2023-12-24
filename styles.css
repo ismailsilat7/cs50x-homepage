@@ -50,12 +50,16 @@ hr {
   border: none;
   height: 2px; 
   background-color: #231F20; 
-  width: 80px;
+  width: 100px;
   margin: 20px 0; 
   transition: width 1s ease-in-out;
 }
 
 .about-container:hover hr, .academic-background:hover hr {
+  width: 100%;
+}
+
+.connect:hover hr {
   width: 100%;
 }
 
@@ -104,6 +108,54 @@ hr {
   color: #ffffff;
   background-color: #212529;
   margin-bottom: 0;
+}
+
+.connect {
+  margin:0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 90vh;
+}
+
+.connect a {
+  text-decoration: none;
+  color: #231F20;
+  margin-right: 5px;
+}
+
+.name > a, .my-projects > a {
+  transition: transform 0.3s ease;
+}
+
+.name > a:hover, .my-projects > a:hover {
+  transform: scale(1.2);
+}
+
+
+.facebook:hover {
+  color: #316FF6;
+}
+
+.instagram:hover {
+  color: #962fbf;
+}
+
+.discord:hover {
+  color: #5865F2;
+}
+
+.github:hover,a:hover {
+  color: #686c70;
+}
+
+.details > .name {
+  font-weight: bolder;
+}
+
+.my-projects a {
+  text-decoration: underline;
+  font-weight: bolder;
 }
 
 @media (max-width: 850px) {
