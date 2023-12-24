@@ -52,15 +52,7 @@ hr {
   background-color: #231F20; 
   width: 100px;
   margin: 20px 0; 
-  transition: width 1s ease-in-out;
-}
-
-.about-container:hover hr, .academic-background:hover hr {
-  width: 100%;
-}
-
-.connect:hover hr {
-  width: 100%;
+  transition: width 3s ease-in-out;
 }
 
 .academic-background {
