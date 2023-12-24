@@ -45,7 +45,7 @@
     <div class="connect">
       <div class="connect-head">
         <h1>Reach out</h1>
-        <hr>
+        <hr class="aboutHr">
       </div>
       <div class="details">
         <div class="name"><a href="./index.html">Ismail Silat</a></div>
@@ -73,5 +73,29 @@
       </div>
     </div>
     <p class="footer">Copyright &copy; Ismail Silat &middot; CS50x</p>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        // Get all elements with the class 'aboutHr'
+        const aboutHrElements = document.querySelectorAll(".aboutHr");
+    
+        // Create an Intersection Observer for each aboutHr element
+        aboutHrElements.forEach(aboutHr => {
+          const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                // If the container is visible on the screen, animate the hr width
+                aboutHr.style.width = "90%";
+              } else {
+                // If the container is not visible, reset hr width to 0
+                aboutHr.style.width = "0";
+              }
+            });
+          });
+    
+          // Observe the closest .connect-head element for each aboutHr
+          observer.observe(aboutHr.closest('.connect-head'));
+        });
+      });
+    </script>
   </body>
 </html>
