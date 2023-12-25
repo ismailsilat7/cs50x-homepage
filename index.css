@@ -74,7 +74,27 @@ a {
   background-color: #212529;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) and (min-width: 761px) {
+  .rounded {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .container {
+    align-items: center;
+  }
+  .container p {
+    font-size: 18px;
+  }
+  .container h1 {
+    font-size: 35px;
+  }
+  .container .intro {
+    width: 40%;
+  }
+}
+
+@media (max-width: 766px) {
   .body {
     min-height: 100vh;
   }
@@ -104,3 +124,11 @@ a {
 }
 
 
+@media (max-width: 370px) {
+  .container h1 {
+    font-size: 25px;
+  }
+  .container p {
+    font-size: 16px;
+  }
+}
